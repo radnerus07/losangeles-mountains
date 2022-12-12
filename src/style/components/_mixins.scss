@@ -1,0 +1,10 @@
+@mixin d-flex($justifycontent) {
+    display: flex;
+    align-items: center;
+    justify-content: $justifycontent;
+  }
+  @mixin circle($i) {
+    border-radius: 100%;
+    height: $i;
+    width: $i;
+  }

@@ -1,0 +1,20 @@
+.footer {
+    background-color: $primary-color;
+
+    &__pagerights {
+       color: $footer-color; 
+    }
+    &__mount {
+        letter-spacing: 0.6px;
+        color: $footer-color;
+        font-weight: 700;
+       }
+    
+       &__title {
+        max-width: 100px;
+        color: $footer-color;
+        line-height: 0.8;
+        font-weight: 700;
+       }
+
+}

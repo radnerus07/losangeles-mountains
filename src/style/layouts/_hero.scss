@@ -1,0 +1,22 @@
+.hero {
+    
+    
+    &__heading {
+            
+            color: $text-color;
+            line-height: 0.8;  
+    }
+    &__mount {
+        letter-spacing: 4px;
+    }
+    &__content {
+        @include d-flex(center);
+        padding-top: 200px;
+    }
+}
+
+.banner-image {
+        background-image: url('/src/assets/imgs/heroimage.jpg');
+        height: 723px;
+        width: 100%;
+}

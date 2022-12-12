@@ -1,0 +1,62 @@
+.imageslides {
+     background-color: $primary-color;
+    &__title {
+        @include d-flex(start);
+        width: 100%;
+        background-color: $primary-color;
+        }
+        &__heading {
+            color: $text-color-grey;
+            letter-spacing: -1px;
+          
+        }
+        &__heading li {
+            padding: 10px; 
+            &:hover {
+                background-color: $text-color-grey;
+            }
+        }
+
+        &__item {
+            border-bottom: 1px solid transparent;
+
+            &:hover {
+                color: $primary-color;
+                border-bottom: 1px solid $primary-color;
+               }
+        }
+        &__images {
+            @include d-flex(start);
+            overflow: scroll;
+            scroll-behavior: smooth;
+            transition: ease 0.6ms;
+            &::-webkit-scrollbar {
+            display: none;
+        }
+        }  
+        &__container {
+            position: relative;
+            transition: all 0.5s;
+        }
+        &__boxcontent {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            background-color: $schedule-boxbackground;
+            width: 340px;
+            padding: 20px;
+        }
+        &__boxheading {
+            margin-bottom: 10px
+        }
+        &__boxlist {
+            @include d-flex(start);
+            flex-direction: column;
+        }
+        &__boxitems {
+            @include d-flex(space-between);
+            flex-direction: row;
+        }
+        
+    }
+   

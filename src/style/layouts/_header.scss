@@ -1,0 +1,53 @@
+.nav {
+   position: fixed;
+   width: 100%;
+   z-index: 5;
+    &__menu {
+    @include d-flex(space-between);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    }
+
+   &__img {
+    height: 40px;
+    width: 40px;
+    border: 2px solid $primary-color;
+    border-radius: 20px;
+    object-fit: cover;
+   }
+   &__logo a{ 
+    display: inline-block;
+    margin-right: 10px;
+   }
+   &__links {
+    
+   }
+   &__list {
+    border-bottom: 1px solid $text-color-general;
+   }
+   &__number {
+    margin-right: 5px;
+   }
+   &__mount {
+    letter-spacing: 0.6px;
+   }
+
+   &__title {
+    max-width: 100px;
+    color: $text-color;
+    line-height: 0.8;
+   }
+   &__logo {
+    @include d-flex(space-between);
+   }
+   &__bgclr {
+    background-color: $text-color-general;
+    transition: background-color .5s ease-in-out;
+   }
+}
+
+.cnt-clr-reset {
+    @extend .c-reset;
+    border-bottom: 1px solid $primary-color;
+}

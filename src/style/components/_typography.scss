@@ -1,0 +1,49 @@
+@import './variables';
+
+
+body {
+    font-family: 'PT Sans', sans-serif;
+  }
+
+.heading {
+
+  &-xl {
+    font-size: 250px;
+    color: $text-color-general;
+    font-weight: weight(bold);
+  }
+  
+  &-lg {
+    font-size: 120px;
+    color: $text-color-general;
+    font-weight: weight(bold);
+  }
+  &-md {
+    font-size: 32px;
+    color: $text-color;
+    font-weight: weight(bold);
+  }
+
+}
+
+.heading-sm {
+  font-size: 24px;
+  font-weight: weight(bold);
+  color: $primary-color;
+}
+
+.paragraph {
+  &-md {
+    font-size: 16px;
+    color: $text-color-general;
+    font-weight: 400;
+  
+  }
+  &-lg {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: $text-color-general;
+  }
+  
+}
