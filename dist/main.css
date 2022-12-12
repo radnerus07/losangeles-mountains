@@ -196,21 +196,16 @@ a {
   .carousel__items li:not(:last-child) {
     margin-right: 12px; }
 
-.carousel-slidedots > * {
-  display: inline-block;
-  padding: 7px;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  margin-right: 5px; }
-  .carousel-slidedots > *:hover {
-    background-color: #ffffff; }
-  .carousel-slidedots > *.active {
-    background-color: #ffffff; }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff; }
 
-.carousel-slidedots {
-  position: absolute;
-  bottom: -36px;
-  left: 46%; }
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 .imageslides {
   background-color: #414f6b; }
