@@ -12,6 +12,7 @@
 </head>
 <body>
     <header class="nav" id="nav">
+    <div>
         <nav class="nav__menu container">
             <div class="nav__logo f-reset">
                 <a href="#0"><img class="nav__img" src="./assets/imgs/mountainlogo.png" alt="mountainlogo"></a>
@@ -21,10 +22,11 @@
                 </div>
             </div>
             <ul class="nav__items">
-                <li class="nav__list m-right  cnt-clr-reset"><a href="#0" class="nav__links t-transform paragraph-lg " id="navhistory"><span class="nav__number">01.</span>history</a></li>
-                <li class="nav__list cnt-clr-reset"><a href="#0" class="nav__links t-transform paragraph-lg " id="navteam"><span class="nav__number">02.</span>team</a></li>
+                <li class="nav__list m-right  cnt-clr-reset"><a href="#history" class="nav__links t-transform paragraph-lg " id="navhistory"><span class="nav__number">01.</span>history</a></li>
+                <li class="nav__list cnt-clr-reset"><a href="#claim" class="nav__links t-transform paragraph-lg " id="navteam"><span class="nav__number">02.</span>team</a></li>
             </ul>
         </nav>
+    </div>
     </header>
     <main>
         <section class="hero banner-image">
@@ -32,7 +34,7 @@
                     <h2 class="hero__heading heading-lg t-transform wrapper">losangeles <span class="c-reset hero__mount">mountains</span></h2>
                 </div>
         </section>
-        <section class="history history-bgimage">
+        <section class="history history-bgimage" id="history">
               <div class="container">
                  <div class="history__content">
                     <h1 class="heading-xl history__title">01</h1>
@@ -47,26 +49,36 @@
 
                 <div class="swiper mySwiper carousel">
                     <ul class="swiper-wrapper carousel__items f-reset">
-                        <li><img class="swiper-slide carousel__image" src="./assets/imgs/manandmountain.jpg" alt="manstandinginmountain"></li>
-                        <li><img class="swiper-slide carousel__image" src="./assets/imgs/heroimage.jpg" alt="mountain"></li>
-                        <li><img class="swiper-slide carousel__image" src="./assets/imgs/manandmountain.jpg" alt="manstandinginmountain"></li>
-                        <li><img class="swiper-slide carousel__image" src="./assets/imgs/heroimage.jpg" alt="mountain"></li>
-                        <li><img class="swiper-slide carousel__image" src="./assets/imgs/manandmountain.jpg" alt="manstandinginmountain"></li>
-                        <li><img class="swiper-slide carousel__image" src="./assets/imgs/heroimage.jpg" alt="mountain"></li>
-                        <li><img class="swiper-slide carousel__image" src="./assets/imgs/manandmountain.jpg" alt="manstandinginmountain"></li>
-                        <li><img class="swiper-slide carousel__image" src="./assets/imgs/heroimage.jpg" alt="mountain"></li>
-                        <li><img class="swiper-slide carousel__image" src="./assets/imgs/manandmountain.jpg" alt="manstandinginmountain"></li>
-                        <li><img class="swiper-slide carousel__image" src="./assets/imgs/heroimage.jpg" alt="mountain"></li>
-                        <li><img class="swiper-slide carousel__image" src="./assets/imgs/manandmountain.jpg" alt="manstandinginmountain"></li>
-                        <li><img class="swiper-slide carousel__image" src="./assets/imgs/heroimage.jpg" alt="mountain"></li>
+                        <li class="swiper-slide"><img class="carousel__image" src="./assets/imgs/manandmountain.jpg" alt="manstandinginmountain"></li>
+                        <li class="swiper-slide"><img class="carousel__image" src="./assets/imgs/heroimage.jpg" alt="mountain"></li>
+                        <li class="swiper-slide"><img class="carousel__image" src="./assets/imgs/manandmountain.jpg" alt="manstandinginmountain"></li>
+                        <li class="swiper-slide"><img class="carousel__image" src="./assets/imgs/heroimage.jpg" alt="mountain"></li>
+                        <li class="swiper-slide"><img class="carousel__image" src="./assets/imgs/manandmountain.jpg" alt="manstandinginmountain"></li>
+                        <li class="swiper-slide"><img class="carousel__image" src="./assets/imgs/heroimage.jpg" alt="mountain"></li>
+                        <li class="swiper-slide"><img class="carousel__image" src="./assets/imgs/manandmountain.jpg" alt="manstandinginmountain"></li>
+                        <li class="swiper-slide"><img class="carousel__image" src="./assets/imgs/heroimage.jpg" alt="mountain"></li>
+                        <li class="swiper-slide"><img class="carousel__image" src="./assets/imgs/manandmountain.jpg" alt="manstandinginmountain"></li>
+                        <li class="swiper-slide"><img class="carousel__image" src="./assets/imgs/heroimage.jpg" alt="mountain"></li>
+                        <li class="swiper-slide"><img class="carousel__image" src="./assets/imgs/manandmountain.jpg" alt="manstandinginmountain"></li>
+                        <li class="swiper-slide"><img class="carousel__image" src="./assets/imgs/heroimage.jpg" alt="mountain"></li>
                     </ul>
-                    <div class="swiper-pagination"></div> 
+                        <div class="swiper-pagination"></div>
                 </div>
               </div>
         </section>
 
-        <section>
+        <section id="claim">
             <div class="imageslides">
+                <div class="bg-color-chg">
+                <div class="history__content imageslides__topic container">
+                    <h1 class="heading-xl history__title">02</h1>
+                    <div class="history__subtitle">
+                        <h4 class="history__heading t-transform heading-sm">climb</h4>
+                        <div class="history__square"></div>
+                    </div>
+                    <p class="history__para paragraph-md imageslides__centercontent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nam vitae earum fugit quos ducimus nulla animi iure voluptatem, quasi pariatur ratione quia illo voluptatum sequi molestiae cumque rerum provident in aut laborum veritatis eaque! Perspiciatis dolore sint magnam. Dicta excepturi voluptatem in repellendus, voluptas mollitia officia! Illo, ipsum quasi corrupti libero modi perferendis sapiente?</p>
+                </div>
+            </div>
                 <div class="imageslides__title container">
                     <ul  class="heading-sm imageslides__heading t-transform ">
                         <li><h4 class="imageslides__item m-right" id="slide-mountain1">mountain1</h4></li>
@@ -149,21 +161,17 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          slidesPerGroup: 3,
-          loop: true,
-          loopFillGroupWithBlank: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: 'horizontal',
+        slidesPerGroup: 4,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        }
+      });
+    </script>
 </body>
 </html>

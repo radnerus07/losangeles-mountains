@@ -57,6 +57,14 @@
             @include d-flex(space-between);
             flex-direction: row;
         }
-        
+        &__topic {
+            background-color: $text-color-general;
+            padding-top: 10px;
+        }
+        &__centercontent {
+            padding-bottom: 50px;
+        }
     }
+
+
    
